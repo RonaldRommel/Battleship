@@ -142,15 +142,15 @@ h2 {
 }
 
 .board-cell.hit {
-  background-color: #e74c3c;
-  background-image: url("../assets/program.png");
+  background-color: #3498db;
+  background-image: url("../assets/anchor.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .board-cell.miss {
-  background-color: #3498db;
+  background-color: #e74c3c;
   background-image: url("../assets/close.png");
   background-size: cover;
   background-position: center center;
@@ -313,6 +313,36 @@ h2 {
   color: white;
 }
 
+.made-by {
+  text-align: center;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.made-by p {
+  font-size: 14px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.made-by .name {
+  font-weight: bold;
+}
+
+.made-by .email, .made-by .linkedin, .made-by .github {
+  color: #0077b5; /* LinkedIn blue color */
+}
+
+.made-by a {
+  color: #0077b5;
+  text-decoration: none;
+}
+
+.made-by a:hover {
+  text-decoration: underline;
+}
+
+
 
 @media (max-width: 480px) {
   .navbar-title h1 {
@@ -342,6 +372,8 @@ h2 {
     position: relative;
     cursor: pointer;
   }
+  
+  
 
   .highscores-container h2,
   .rules-container h2 {
