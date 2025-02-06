@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship - Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Battleship</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="game.html" class="active">Game</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="scores.html">High Scores</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="game-container">
+            <h2>Game Board</h2>
+            <div class="board">
+                <!-- Example 10x10 Grid for the Game Board -->
+                <div class="row">
+                    <div class="cell hit">✓</div>
+                    <div class="cell miss">X</div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+                <!-- Additional rows can be added here -->
+            </div>
+            <button class="restart-btn">Restart</button>
+            <p class="mock-timer">Time Elapsed: 05:32</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Battleship Game. All rights reserved.</p>
+    </footer>
+</body>
+</html>

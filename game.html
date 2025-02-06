@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Battle in Progress - Battleship</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-title">
+                <h1>Battleship</h1>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="game.html">Game</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="scores.html">High Scores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="game-board-container">
+        <h2>Enemy's Board</h2>
+        <div class="game-board enemy-board">
+            <!-- Example of enemy's board with hits (⚓) and misses (❌) -->
+            <div class="board-cell hit"></div>
+            <div class="board-cell miss"></div>
+            <div class="board-cell"></div>
+            <!-- Repeat cells as needed for 14 rows x 14 columns -->
+        </div>
+
+        <h2>Your Board</h2>
+        <div class="game-board player-board">
+            <!-- Example of player's board with ships (🔲) -->
+            <div class="board-cell ship"></div>
+            <div class="board-cell"></div>
+            <div class="board-cell ship"></div>
+            <!-- Repeat cells as needed for 14 rows x 14 columns -->
+        </div>
+    </section>
+
+    <section class="game-info">
+        <div class="timer">
+            <p>Time: 02:35</p>
+        </div>
+        <button class="restart-btn">Restart Game</button>
+    </section>
+
+    <footer>
+        <p>Made by <a href="mailto:your-email@example.com">Your Name</a></p>
+    </footer>
+</body>
+
+</html>
