@@ -256,6 +256,7 @@ h2 {
 /* High Scores Page Styles */
 .highscores-container {
   max-width: 800px;
+  min-height: 90%;
   margin: 100px auto 40px auto; /* Adds top margin to prevent overlap with navbar */
   padding: 20px;
   background: #ffffff;
