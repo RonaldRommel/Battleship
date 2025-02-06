@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   line-height: 1.6;
   background-color: #f4f4f4;
   color: #333;
@@ -100,6 +100,7 @@ footer {
   padding: 20px;
   background-color: #2c3e50;
   color: white;
+  margin-top: 30px;
 }
 
 footer a {
@@ -107,7 +108,7 @@ footer a {
   text-decoration: none;
 }
 
- /* Game Page Styles */
+/* Game Page Styles */
 .game-board-container {
   margin-top: 100px;
   padding: 20px;
@@ -136,17 +137,32 @@ h2 {
   position: relative;
   cursor: pointer;
 }
+.board-cell:hover {
+  background-color: white;
+}
 
 .board-cell.hit {
   background-color: #e74c3c;
+  background-image: url("../assets/program.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .board-cell.miss {
   background-color: #3498db;
+  background-image: url("../assets/close.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .board-cell.ship {
   background-color: #2ecc71;
+  background-image: url("../assets/dot.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .game-info {
@@ -172,4 +188,202 @@ h2 {
 
 .restart-btn:hover {
   background-color: #c0392b;
+}
+/* Rules Page Styles */
+.rules-container {
+  max-width: 800px;
+  margin: 100px auto 40px auto; /* Adds top margin to prevent overlap with navbar */
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 (0, 0, 0, 0.1);
+}
+
+.rules-container h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.rules-content h3 {
+  font-size: 24px;
+  color: #34495e;
+  margin-top: 20px;
+}
+
+.rules-content p,
+.rules-content ul {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.rules-content ul {
+  padding-left: 20px;
+}
+
+.rules-content ul li {
+  margin-bottom: 10px;
+}
+
+.credits {
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+}
+
+.credits h3 {
+  font-size: 22px;
+  color: #2c3e50;
+}
+
+.credits p {
+  font-size: 16px;
+}
+
+.credits a {
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+.credits a:hover {
+  text-decoration: underline;
+}
+/* High Scores Page Styles */
+.highscores-container {
+  max-width: 800px;
+  margin: 100px auto 40px auto; /* Adds top margin to prevent overlap with navbar */
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.highscores-container h2 {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* High Scores Table */
+.highscores-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.highscores-table thead {
+  background-color: #3498db;
+  color: white;
+}
+
+.highscores-table th,
+.highscores-table td {
+  padding: 12px;
+  border: 1px solid #bdc3c7;
+  text-align: center;
+  font-size: 18px;
+}
+
+.highscores-table tbody tr:nth-child(even) {
+  background-color: #ecf0f1;
+}
+
+.highscores-table tbody tr:hover {
+  background-color: #d5dbdb;
+  transition: 0.3s;
+}
+
+/* Hide default checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+}
+
+
+@media (max-width: 480px) {
+  .navbar-title h1 {
+    font-size: 20px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-links li {
+    margin-bottom: 5px;
+  }
+
+  .game-board {
+    grid-template-columns: repeat(14,  25px); 
+    grid-template-rows: repeat(14, 25px);
+    gap: 1px;
+  }
+
+  .board-cell {
+    width: 25px;
+    height: 25px;
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .highscores-container h2,
+  .rules-container h2 {
+    font-size: 26px;
+  }
+
+  .rules-content p,
+  .rules-content ul {
+    font-size: 14px;
+  }
+
+  .credits {
+    padding: 10px;
+  }
+
+  .credits h3 {
+    font-size: 18px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #2c3e50;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    text-align: center;
+  }
+
+  .navbar-links li {
+    margin: 15px 0;
+  }
+
+  /* Show menu when checkbox is checked */
+  #menu-toggle:checked ~ .navbar-links {
+    display: flex;
+  }
+  
+
 }

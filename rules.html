@@ -1,66 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Battleship - Rules</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="navbar-title">
-                <h1>Battleship</h1>
-            </div>
-            <ul class="navbar-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="game.html">Game</a></li>
-                <li><a href="rules.html">Rules</a></li>
-                <li><a href="scores.html">High Scores</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <div class="navbar-title">
+          <h1>Battleship</h1>
+        </div>
+        <!-- Hamburger Menu -->
+        <label for="menu-toggle" class="hamburger">☰</label>
+        <input type="checkbox" id="menu-toggle" />
+        <ul class="navbar-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="game.html">Game</a></li>
+          <li><a href="rules.html">Rules</a></li>
+          <li><a href="scores.html">High Scores</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section class="rules-container">
-        <h2>How to Play Battleship</h2>
-        <div class="rules-content">
-            <h3>Objective</h3>
-            <p>The goal of the game is to sink all of your opponent's ships before they sink yours. Each player takes turns
-                guessing the location of the other player's ships on a grid.</p>
-            
-            <h3>Setup</h3>
-            <ul>
-                <li>Each player has a 14x14 grid.</li>
-                <li>Players place their ships (different sizes) on their grid.</li>
-                <li>Ships can be placed horizontally or vertically but not diagonally.</li>
-            </ul>
+      <h2>How to Play Battleship</h2>
+      <div class="rules-content">
+        <h3>Objective</h3>
+        <p>
+          The goal of the game is to sink all of your opponent's ships before
+          they sink yours. Each player takes turns guessing the location of the
+          other player's ships on a grid.
+        </p>
 
-            <h3>Gameplay</h3>
-            <ul>
-                <li>Players take turns guessing a square on the opponent's grid.</li>
-                <li>If the shot hits a ship, it is marked as a hit (⚓) on the board.</li>
-                <li>If the shot misses, it is marked as a miss (❌).</li>
-                <li>The first player to sink all of the opponent's ships wins!</li>
-            </ul>
+        <h3>Setup</h3>
+        <ul>
+          <li>Each player has a 14x14 grid.</li>
+          <li>Players place their ships (different sizes) on their grid.</li>
+          <li>
+            Ships can be placed horizontally or vertically but not diagonally.
+          </li>
+        </ul>
 
-            <h3>End Game</h3>
-            <p>The game ends when one player has sunk all of the opponent's ships.</p>
-        </div>
-    </section>
+        <h3>Gameplay</h3>
+        <ul>
+          <li>Players take turns guessing a square on the opponent's grid.</li>
+          <li>
+            If the shot hits a ship, it is marked as a hit (⚓) on the board.
+          </li>
+          <li>If the shot misses, it is marked as a miss (❌).</li>
+          <li>The first player to sink all of the opponent's ships wins!</li>
+        </ul>
 
-    <section class="credits">
-        <h3>Credits</h3>
-        <p>Made by <a href="mailto:your-email@example.com">Your Name</a></p>
-        <p>GitHub: <a href="https://github.com/your-github" target="_blank">your-github</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">your-profile</a></p>
+        <h3>End Game</h3>
+        <p>
+          The game ends when one player has sunk all of the opponent's ships.
+        </p>
+      </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Battleship Game</p>
+      <p>&copy; 2025 Battleship Game</p>
     </footer>
-</body>
-
+  </body>
 </html>
